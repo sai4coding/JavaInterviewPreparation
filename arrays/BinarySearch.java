@@ -23,3 +23,28 @@ public class BinarySearch {
         }
     }
 }
+                               //2nd Approach
+
+
+
+class Binary{
+    int a[]={1,2,3,4,5};
+    int target=3;
+    int size=a.length-1;
+    public int  binarySearch(int target){
+        for(int i=0;i<size;i++){
+            if(a[i]==target){
+                System.out.println(a[i] +"found at index" +i);
+            }
+        }
+
+
+        return target;
+    }
+}
+class BinarySearch{
+    public static void main(String[] args) {
+        Binary b=new Binary();
+        b.binarySearch(3);
+    }
+}
